@@ -4,20 +4,20 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return render_template("Home.html")
+    return render_template("home.html")
 
 @app.route("/about")
 def about():
-    return render_template("About.html")
+    return render_template("about.html")
 
 @app.route("/signup")
 def signup():
-    return render_template("Signup.html")
+    return render_template("signup.html")
 
 
 @app.route("/login")
 def login():
-    return render_template("Login.html")
+    return render_template("login.html")
 
 
 if __name__ == "__main__":
