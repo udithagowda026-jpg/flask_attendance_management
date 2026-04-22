@@ -5,8 +5,13 @@
             <ul>
                 <li><a href="/">home</a></li>
                 <li><a href="/about">about</a></li>
+                {% if not user %}
                 <li><a href="/signup">signup</a></li>
                 <li><a href="/login">login</a></li>
+                {% else %}
+                <li><a href="/logout/{{ user.id }}">logout</a></li>
+                {% endif %}
+
             </ul>
         </nav>
     </header>
