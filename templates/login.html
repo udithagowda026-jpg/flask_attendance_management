@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'Base.html' %}
+
+{% block body %}
     <h1>Login Page</h1>
     <p>This is the login page of our Flask application.</p>
-</body>
-</html>
+    <!-- Login Form -->
+    <form action="/login" method="POST">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <br>
+    <p>Don't have an account? <a href="/signup">Signup</a></p>
+</div>
+{% endblock %}
