@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>about Us</h1>
-    <p>This is the about page of our Flask application.</p>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>About Us</h1>
+<p>This is the about page of our Flask application.
+     In that we will provide information about our company and its mission.
+    It will also include details about our team and the services we offer.</p>
+{% endblock %}
